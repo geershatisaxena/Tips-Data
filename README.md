@@ -4,7 +4,7 @@ A complete exploratory data analysis (EDA) and visualization project using the f
 
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white
-![Numpy]https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white
-![Matplotlib]https://img.shields.io/badge/-Matplotlib-11557c?logo=matplotlib&logoColor=white
-![Seaborn]https://img.shields.io/badge/-Seaborn-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)
+![Numpy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557c?logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/-Seaborn-3776AB?logo=python&logoColor=white)
