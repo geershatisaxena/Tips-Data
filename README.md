@@ -39,3 +39,13 @@ A complete exploratory data analysis (EDA) and visualization project using the f
 ![Agile](https://img.shields.io/badge/-Agile-3776AB?logo=python&logoColor=white)
 ![Data Science](https://img.shields.io/badge/-Data_Science-150458?logo=pandas&logoColor=white)
 ![Research](https://img.shields.io/badge/-Research-013243?logo=numpy&logoColor=white)
+
+┌─────────────────────────────────────────────────────────────┐
+│                    DATA SCIENCE STACK                       │
+├─────────────────────────────────────────────────────────────┤
+│  Programming Language: Python 3.8+                          │
+│  Core Libraries: Pandas, NumPy, Matplotlib, Seaborn         │
+│  Statistical: SciPy, StatsModels, Scikit-learn              │
+│  Visualization: JoyPy, Squarify, MPLcursors                 │
+│  Environment: Jupyter, VS Code, Git                         │
+└─────────────────────────────────────────────────────────────┘
