@@ -39,13 +39,17 @@ A complete exploratory data analysis (EDA) and visualization project using the f
 ![Agile](https://img.shields.io/badge/-Agile-3776AB?logo=python&logoColor=white)
 ![Data Science](https://img.shields.io/badge/-Data_Science-150458?logo=pandas&logoColor=white)
 ![Research](https://img.shields.io/badge/-Research-013243?logo=numpy&logoColor=white)
+![Data Loading](https://img.shields.io/badge/-Data_Loading-150458?logo=pandas&logoColor=white)
+![Data Cleaning](https://img.shields.io/badge/-Data_Cleaning-013243?logo=numpy&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/-Data_Analysis-3776AB?logo=python&logoColor=white)
+![Data Visualization](https://img.shields.io/badge/-Data_Visualization-11557c?logo=matplotlib&logoColor=white)
+![Reporting](https://img.shields.io/badge/-Reporting-000000?logo=markdown&logoColor=white)
+![100+ Visualizations](https://img.shields.io/badge/-100%252B_Visualizations-FF6B6B?logo=python&logoColor=white)
+![Statistical Testing](https://img.shields.io/badge/-Statistical_Testing-8CAAE6?logo=scipy&logoColor=white)
+![Interactive Plots](https://img.shields.io/badge/-Interactive_Plots-3776AB?logo=python&logoColor=white)
+![Dashboard Creation](https://img.shields.io/badge/-Dashboard_Creation-11557c?logo=matplotlib&logoColor=white)
+![Memory Efficient](https://img.shields.io/badge/-Memory_Efficient-013243?logo=numpy&logoColor=white)
+![Fast Computation](https://img.shields.io/badge/-Fast_Computation-150458?logo=pandas&logoColor=white)
+![Parallel Processing](https://img.shields.io/badge/-Parallel_Processing-3776AB?logo=python&logoColor=white)
 
-┌─────────────────────────────────────────────────────────────┐
-│                    DATA SCIENCE STACK                       │
-├─────────────────────────────────────────────────────────────┤
-│  Programming Language: Python 3.8+                          │
-│  Core Libraries: Pandas, NumPy, Matplotlib, Seaborn         │
-│  Statistical: SciPy, StatsModels, Scikit-learn              │
-│  Visualization: JoyPy, Squarify, MPLcursors                 │
-│  Environment: Jupyter, VS Code, Git                         │
-└─────────────────────────────────────────────────────────────┘
+
