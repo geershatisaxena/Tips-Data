@@ -1,831 +1,250 @@
 <div align="center">
 
-# 🌈📊 **SEABORN TIPS DATA ANALYSIS REPORT**
-### ✨ *Exploratory Data Analysis using Pandas, NumPy, Matplotlib & Seaborn* ✨
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=24,12,20,17,30,6&text=SEABORN%20TIPS%20DATA%20ANALYSIS&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Pandas%20•%20NumPy%20•%20Matplotlib%20•%20Seaborn&descAlignY=60"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=FF0000&center=true&vCenter=true&width=900&lines=Data+Analysis+Project;Seaborn+Tips+Dataset+Exploration;Pandas+%7C+NumPy+%7C+Matplotlib+%7C+Seaborn;Visualizing+Customer+Tipping+Behavior" />
+<br>
 
----
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=30&duration=2500&pause=1000&color=FF0000&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=120&lines=📊+SEABORN+TIPS+DATASET+ANALYSIS;🚀+Exploratory+Data+Analysis+(EDA);📈+Visualizations+%7C+Insights+%7C+Statistics;🌈+Built+With+Pandas+NumPy+Matplotlib+Seaborn"/>
 
-![Dashboard](dashboard-overview.png)
+<br>
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
 
 </div>
 
 ---
 
-# 🎯 Introduction & Objective
+<div align="center">
 
-> The **Tips Dataset** is one of the most popular sample datasets available in Seaborn. It contains information collected from restaurant bills and tips, making it ideal for practicing **Exploratory Data Analysis (EDA)**, statistical summaries, and visualization techniques.
+# 🌈✨ DATA ANALYSIS REPORT ✨🌈
 
-## 📌 Project Objectives
+<img src="https://user-images.githubusercontent.com/74038190/216656986-9e8f8e0f-3b31-4f41-a0f0-00a34b9cb2b6.gif" width="100%">
 
-- Understand the structure of the dataset.
-- Explore relationships between restaurant bills and tips.
-- Analyze customer behavior based on:
-  - Gender
-  - Smoking status
-  - Day of the week
-  - Time of dining
-  - Party size
-- Identify patterns, trends, and anomalies.
-- Create meaningful visualizations using Seaborn and Matplotlib.
-- Generate actionable insights from the data.
+</div>
 
 ---
 
-# 📚 Libraries Used
+# 🎯 OBJECTIVE
 
-| Library | Purpose |
-|----------|----------|
-| **Pandas** | Data manipulation and analysis |
-| **NumPy** | Numerical operations |
-| **Matplotlib** | Data visualization |
-| **Seaborn** | Statistical graphics and advanced visualizations |
+<div align="center">
 
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-```
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=24&pause=1000&color=00FFFF&center=true&vCenter=true&width=900&lines=Understanding+Restaurant+Customer+Behaviour;Analyzing+Bills+Tips+and+Spending+Patterns;Discovering+Hidden+Insights+Through+EDA"/>
+
+</div>
+
+> 🌟 The Tips Dataset is a popular Seaborn dataset containing information about restaurant bills, tips, customer demographics, dining times, and party sizes.
 
 ---
 
-# 📂 Dataset Overview
+# 🌈 DATASET OVERVIEW
 
-The dataset contains information about restaurant customers and the tips they left.
+<table>
+<tr>
+<td width="50%">
 
-## Dataset Information
-
-| Column | Description |
-|----------|-------------|
-| total_bill | Total restaurant bill amount |
-| tip | Tip given by customer |
-| sex | Gender of customer |
-| smoker | Whether customer is smoker |
-| day | Day of visit |
-| time | Lunch or Dinner |
-| size | Number of people in group |
-
----
-
-## Dataset Shape
+### 📦 Dataset Shape
 
 ```python
 tips.shape
 ```
 
-Expected Output:
+Output
 
 ```python
-(244, 7)
+(244,7)
 ```
+
+</td>
+
+<td width="50%">
+
+### 📝 Features
+
+| Feature | Description |
+|----------|-------------|
+| total_bill | Total bill amount |
+| tip | Tip amount |
+| sex | Gender |
+| smoker | Smoker status |
+| day | Weekday |
+| time | Lunch/Dinner |
+| size | Party size |
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Column Information
+# 📊 VISUALIZATION SHOWCASE
 
-```python
-tips.columns
-```
+<div align="center">
 
-Output:
+## 🌈 Distribution Analysis
 
-```python
-Index([
-'total_bill',
-'tip',
-'sex',
-'smoker',
-'day',
-'time',
-'size'
-])
-```
+![Distribution](plots/distribution.png)
 
 ---
 
-## Data Types
+## 🔥 Correlation Heatmap
 
-```python
-tips.dtypes
-```
-
-| Column | Data Type |
-|----------|------------|
-| total_bill | float64 |
-| tip | float64 |
-| sex | category/object |
-| smoker | category/object |
-| day | category/object |
-| time | category/object |
-| size | int64 |
+![Heatmap](plots/heatmap.png)
 
 ---
 
-## Missing Values Check
+## 🚀 Scatter Plot Analysis
 
-```python
-tips.isnull().sum()
-```
-
-Expected Output:
-
-```python
-total_bill    0
-tip           0
-sex           0
-smoker        0
-day           0
-time          0
-size          0
-```
-
-✅ No missing values found.
+![Scatter](plots/scatter.png)
 
 ---
 
-# 🚀 Data Loading & Initial Exploration
+## ✨ Pairplot Analysis
 
-## Load Dataset
+![Pairplot](plots/pairplot.png)
+
+</div>
+
+---
+
+# 📈 EXPLORATORY DATA ANALYSIS
+
+## 🌈 Distribution Plot
 
 ```python
-tips = sns.load_dataset("tips")
-tips.head()
-```
-
----
-
-## First Five Records
-
-| total_bill | tip | sex | smoker | day | time | size |
-|------------|-----|------|------|------|------|------|
-| 16.99 | 1.01 | Female | No | Sun | Dinner | 2 |
-| 10.34 | 1.66 | Male | No | Sun | Dinner | 3 |
-| 21.01 | 3.50 | Male | No | Sun | Dinner | 3 |
-
----
-
-## Basic Dataset Information
-
-```python
-tips.info()
-```
-
----
-
-## Statistical Summary
-
-```python
-tips.describe()
-```
-
-Provides:
-
-- Count
-- Mean
-- Standard Deviation
-- Minimum
-- Quartiles
-- Maximum
-
----
-
-# 🧹 Data Cleaning & Preprocessing
-
-Even though the Tips dataset is clean, the following best practices should always be applied.
-
----
-
-## Missing Values Handling
-
-```python
-tips.isnull().sum()
-```
-
-If present:
-
-```python
-tips.fillna(tips.mean(numeric_only=True))
-```
-
----
-
-## Duplicate Records
-
-```python
-tips.duplicated().sum()
-```
-
-Remove duplicates:
-
-```python
-tips = tips.drop_duplicates()
-```
-
----
-
-## Outlier Detection
-
-### Using IQR Method
-
-```python
-Q1 = tips['total_bill'].quantile(0.25)
-Q3 = tips['total_bill'].quantile(0.75)
-
-IQR = Q3 - Q1
-
-lower = Q1 - 1.5 * IQR
-upper = Q3 + 1.5 * IQR
-
-outliers = tips[
-    (tips['total_bill'] < lower) |
-    (tips['total_bill'] > upper)
-]
-```
-
----
-
-## Feature Engineering
-
-### Tip Percentage
-
-```python
-tips["tip_percent"] = (
-    tips["tip"] /
-    tips["total_bill"]
-) * 100
-```
-
-Example:
-
-| total_bill | tip | tip_percent |
-|------------|------|------------|
-| 20 | 4 | 20% |
-
----
-
-# 🔍 Exploratory Data Analysis (EDA)
-
----
-
-# 📈 Univariate Analysis
-
-Univariate analysis focuses on understanding individual variables.
-
----
-
-## Distribution of Total Bill
-
-```python
-plt.figure(figsize=(8,5))
+plt.figure(figsize=(12,6))
 
 sns.histplot(
-    tips["total_bill"],
+    data=tips,
+    x="total_bill",
     kde=True,
-    bins=20
+    bins=20,
+    color="purple"
 )
 
-plt.title("Distribution of Total Bill")
+plt.title(
+    "Distribution of Total Bills",
+    fontsize=18,
+    fontweight="bold"
+)
+
 plt.show()
 ```
 
-![Total Bill Distribution](total-bill-distribution.png)
-
-### Insights
-
-- Right-skewed distribution
-- Majority of bills between \$10-\$25
-- Few high-value bills
+![Total Bill Distribution](plots/total_bill_distribution.png)
 
 ---
 
-## Distribution of Tips
-
-```python
-sns.histplot(
-    tips["tip"],
-    kde=True
-)
-```
-
-![Tip Distribution](tip-distribution.png)
-
-### Findings
-
-- Most tips range from \$2-\$4
-- Positive skew observed
-
----
-
-## Boxplot Analysis
-
-```python
-sns.boxplot(
-    y=tips["total_bill"]
-)
-```
-
-![Boxplot Total Bill](boxplot-totalbill.png)
-
-### Purpose
-
-- Detect outliers
-- Visualize spread
-- Understand quartiles
-
----
-
-## Count Plot of Days
-
-```python
-sns.countplot(
-    data=tips,
-    x="day"
-)
-```
-
-![Day Count Plot](day-countplot.png)
-
-### Observation
-
-Weekend traffic dominates restaurant visits.
-
----
-
-# 📊 Bivariate Analysis
-
-Bivariate analysis studies relationships between two variables.
-
----
-
-## Total Bill vs Tip
-
-```python
-plt.figure(figsize=(8,5))
-
-sns.scatterplot(
-    data=tips,
-    x="total_bill",
-    y="tip",
-    hue="sex"
-)
-```
-
-![Scatter Plot](scatter-totalbill-tip.png)
-
-### Insights
-
-- Positive correlation observed
-- Higher bills generally generate larger tips
-
----
-
-## Average Tips by Gender
-
-```python
-sns.barplot(
-    data=tips,
-    x="sex",
-    y="tip"
-)
-```
-
-![Gender Tip Analysis](gender-tip-analysis.png)
-
----
-
-## Tips by Smoking Status
-
-```python
-sns.boxplot(
-    data=tips,
-    x="smoker",
-    y="tip"
-)
-```
-
-![Smoker Analysis](smoker-tip-analysis.png)
-
----
-
-## Time vs Total Bill
-
-```python
-sns.violinplot(
-    data=tips,
-    x="time",
-    y="total_bill"
-)
-```
-
-![Time Analysis](time-analysis.png)
-
-### Findings
-
-- Dinner bills tend to be larger
-- Greater variation during dinner
-
----
-
-# 🌐 Multivariate Analysis
-
-Multivariate analysis evaluates relationships among multiple variables simultaneously.
-
----
-
-## Pairplot
-
-```python
-sns.pairplot(
-    tips,
-    hue="sex"
-)
-```
-
-![Pairplot](pairplot-analysis.png)
-
-### Benefits
-
-- Relationship discovery
-- Distribution overview
-- Cluster identification
-
----
-
-## Correlation Heatmap
+## 🔥 Correlation Heatmap
 
 ```python
 corr = tips.corr(
     numeric_only=True
 )
 
-plt.figure(figsize=(8,6))
+plt.figure(figsize=(10,6))
 
 sns.heatmap(
     corr,
     annot=True,
-    cmap="rainbow"
+    cmap="rainbow",
+    linewidths=2
 )
 
 plt.show()
 ```
 
-![Correlation Heatmap](correlation-heatmap.png)
+![Correlation Heatmap](plots/correlation_heatmap.png)
 
 ---
 
-## Interpretation
+# 💡 KEY INSIGHTS
 
-| Variable Pair | Correlation |
-|--------------|------------|
-| total_bill ↔ tip | Strong Positive |
-| size ↔ total_bill | Moderate Positive |
-| size ↔ tip | Moderate Positive |
+<table>
+<tr>
+<td>
 
----
+### 💰 Spending Trends
 
-## Average Bill by Day & Time
+- Most bills range between \$10–\$25
+- Few high-value bills exceed \$40
+- Spending distribution is right-skewed
 
-```python
-pivot = tips.pivot_table(
-    values="total_bill",
-    index="day",
-    columns="time",
-    aggfunc="mean"
-)
+</td>
 
-sns.heatmap(
-    pivot,
-    annot=True,
-    cmap="Spectral"
-)
-```
+<td>
 
-![Day Time Heatmap](day-time-heatmap.png)
+### 🍽 Dining Patterns
+
+- Dinner customers spend more
+- Weekend traffic is highest
+- Larger groups create larger bills
+
+</td>
+</tr>
+</table>
 
 ---
 
-# 📊 Statistical Summary
+## 🚀 Major Findings
 
-## Numerical Features
+✨ Higher bills generate larger tips
 
-```python
-tips.describe()
-```
+✨ Dinner contributes maximum revenue
 
-| Metric | Total Bill | Tip | Size |
-|---------|------------|------|------|
-| Mean | 19.79 | 2.99 | 2.57 |
-| Median | 17.80 | 2.90 | 2 |
-| Std Dev | 8.90 | 1.38 | 0.95 |
-| Min | 3.07 | 1.00 | 1 |
-| Max | 50.81 | 10.00 | 6 |
+✨ Weekend customers dominate traffic
+
+✨ Larger groups spend significantly more
+
+✨ Positive correlation exists between bill and tip
 
 ---
 
-## Grouped Statistics
+# 🎨 TECHNOLOGY STACK
 
-### Average Tip by Day
+<div align="center">
 
-```python
-tips.groupby("day")["tip"].mean()
-```
+<img src="https://skillicons.dev/icons?i=python"/>
 
-### Average Bill by Time
+<br><br>
 
-```python
-tips.groupby("time")["total_bill"].mean()
-```
+<img src="https://img.shields.io/badge/Pandas-FF0080?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-00FFFF?style=for-the-badge&logo=numpy&logoColor=black"/>
+<img src="https://img.shields.io/badge/Matplotlib-FF6600?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Seaborn-9933FF?style=for-the-badge"/>
 
----
-
-# 💡 Key Insights & Findings
-
-## 🔥 Major Discoveries
-
-### 💰 Billing Trends
-
-- Higher bills generally lead to larger tips.
-- Most customer bills are between **\$10 and \$25**.
-- Large bills are relatively rare.
-
-### 🍽 Dining Behavior
-
-- Dinner generates larger bills than lunch.
-- Weekend visits dominate restaurant traffic.
-
-### 👥 Group Size Impact
-
-- Larger groups tend to spend more.
-- Larger groups usually leave higher tips.
-
-### 🚬 Smoking Analysis
-
-- Smoking status shows slight differences in tipping patterns.
-- Distribution overlap suggests limited impact.
-
-### 📊 Correlation Findings
-
-- Strong positive relationship between:
-  - Total Bill ↔ Tip
-- Moderate positive relationship between:
-  - Group Size ↔ Bill
-  - Group Size ↔ Tip
+</div>
 
 ---
 
-# 🎨 Visualizations Gallery
-
----
-
-## 1️⃣ Distribution of Total Bill
-
-![Distribution Plot](distribution-totalbill.png)
-
-Purpose:
-
-- Understand spending patterns
-- Detect skewness
-
----
-
-## 2️⃣ Distribution of Tips
-
-![Tips Histogram](tips-histogram.png)
-
-Purpose:
-
-- Analyze tipping behavior
-
----
-
-## 3️⃣ Total Bill Boxplot
-
-![Total Bill Boxplot](totalbill-boxplot.png)
-
-Purpose:
-
-- Detect outliers
-
----
-
-## 4️⃣ Tip Boxplot
-
-![Tip Boxplot](tip-boxplot.png)
-
-Purpose:
-
-- Visualize variability
-
----
-
-## 5️⃣ Scatter Plot
-
-![Scatter Plot](bill-tip-scatter.png)
-
-Purpose:
-
-- Relationship between bill and tip
-
----
-
-## 6️⃣ Gender Comparison
-
-![Gender Comparison](gender-comparison.png)
-
-Purpose:
-
-- Compare tipping patterns
-
----
-
-## 7️⃣ Smoking Analysis
-
-![Smoking Analysis](smoking-analysis.png)
-
-Purpose:
-
-- Explore smoker vs non-smoker behavior
-
----
-
-## 8️⃣ Pairplot
-
-![Pairplot](pairplot.png)
-
-Purpose:
-
-- Comprehensive feature interaction analysis
-
----
-
-## 9️⃣ Correlation Heatmap
-
-![Heatmap](heatmap.png)
-
-Purpose:
-
-- Visualize feature relationships
-
----
-
-## 🔟 Day-Time Spending Heatmap
-
-![Day Time Heatmap](daytime-heatmap.png)
-
-Purpose:
-
-- Compare average spending patterns
-
----
-
-# 🏆 Best Practices Used
-
-## Pandas
-
-✅ Use `.info()` before analysis
-
-✅ Check missing values
-
-```python
-df.isnull().sum()
-```
-
-✅ Use grouping effectively
-
-```python
-df.groupby("category").mean()
-```
-
----
-
-## NumPy
-
-✅ Vectorized calculations
-
-```python
-df["tip_percent"] = (
-    df["tip"] /
-    df["total_bill"]
-) * 100
-```
-
----
-
-## Matplotlib
-
-✅ Always define figure size
-
-```python
-plt.figure(figsize=(10,6))
-```
-
-✅ Add titles and labels
-
-```python
-plt.title("Plot Title")
-plt.xlabel("X Label")
-plt.ylabel("Y Label")
-```
-
----
-
-## Seaborn
-
-✅ Use themes
-
-```python
-sns.set_theme(
-    style="whitegrid"
-)
-```
-
-✅ Use color palettes
-
-```python
-sns.set_palette(
-    "rainbow"
-)
-```
-
-✅ Add annotations where useful
-
-```python
-sns.heatmap(
-    corr,
-    annot=True
-)
-```
-
----
-
-# 🎯 Conclusion & Recommendations
-
-The **Tips Dataset Analysis** successfully revealed customer spending and tipping patterns through descriptive statistics and visualization techniques.
-
-### Key Conclusions
-
-✔ Strong positive relationship exists between bill amount and tip.
-
-✔ Dinner customers spend more than lunch customers.
-
-✔ Larger groups contribute to higher restaurant revenue.
-
-✔ Weekend activity dominates overall restaurant business.
-
-✔ Data quality is excellent with no missing values.
-
-### Recommendations
-
-📌 Focus promotional campaigns during weekends.
-
-📌 Encourage larger group reservations.
-
-📌 Monitor high-value customers for loyalty programs.
-
-📌 Utilize predictive models to estimate expected tips and revenue.
-
----
-
-# 🚀 Future Scope
-
-The analysis can be extended further using advanced techniques:
+# 🔮 FUTURE SCOPE
 
 ### 🤖 Machine Learning
 
-- Tip Prediction Model
-- Revenue Forecasting
+- Tip Prediction
+- Revenue Prediction
 - Customer Segmentation
 
-### 📈 Advanced Analytics
 
-- Hypothesis Testing
-- Confidence Intervals
-- ANOVA
+
+### ☁ Advanced Analytics
+
 - Regression Analysis
-
-### 📊 Interactive Dashboards
-
-- Plotly Dash
-- Streamlit
-- Power BI
-- Tableau
-
-### ☁ Big Data Expansion
-
-- Real-time restaurant analytics
-- Customer behavior monitoring
-- Dynamic pricing analysis
+- Hypothesis Testing
+- ANOVA
+- Forecasting Models
 
 ---
 
 <div align="center">
 
-# 🌈 Thank You
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=footer&color=gradient&customColorList=24,12,20,17,30,6"/>
 
-### 📊 *Data Analysis using Pandas • NumPy • Matplotlib • Seaborn*
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=28&duration=3000&pause=1000&color=39FF14&center=true&vCenter=true&width=900&lines=THANK+YOU+FOR+VISITING;DATA+ANALYSIS+PROJECT;PANDAS+•+NUMPY+•+MATPLOTLIB+•+SEABORN"/>
 
-✨ Turning restaurant data into actionable insights through visualization and analytics ✨
+### ⭐ If you like this project, consider giving it a star ⭐
 
 </div>
